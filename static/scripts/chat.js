@@ -45,12 +45,12 @@ function firstBotMessage() {
 firstBotMessage();
 
 // Retrieves the response
-function getHardResponse(userText) {
-    let botResponse = getBotResponse(userText);
+async function getHardResponse(userText) {
+    let botResponse =  await getBotResponse(userText);
     let botHtml = '<p class="botText"><span>' + botResponse + '</span></p>';
     $("#chatbox").append(botHtml);
-
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
+
 }
 
 //Gets the text text from the input box and processes it
