@@ -6,6 +6,8 @@ async function getBotResponse(input) {
         return "Hello!" ;
     } else if (input == "Can you provide the pdf link to the UNSW Business Expense Policy?") {
         return "The UNSW Business Expense Policy can be found at the following link: https://www.unsw.edu.au/content/dam/pdfs/governance/policy/2022-01-policies/businessexpensepolicy.pdf" ;
+    } else if (input == "what is the population of australia") {
+        return "ask me about policies"
     } else {        
         await asyncCall(input);
         return parsedData;

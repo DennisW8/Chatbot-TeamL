@@ -47,10 +47,15 @@ firstBotMessage();
 // Retrieves the response
 async function getHardResponse(userText) {
     let botResponse =  await getBotResponse(userText);
+    if (botResponse == "The UNSW Business Expense Policy can be found at the following link: https://www.unsw.edu.au/content/dam/pdfs/governance/policy/2022-01-policies/businessexpensepolicy.pdf") {
+        let botHtml = '<p class="botText"><span>' + "The UNSW Business Expense Policy can be found at the following link:" + '<a href =\"https://www.unsw.edu.au/content/dam/pdfs/governance/policy/2022-01-policies/businessexpensepolicy.pdf">https://www.unsw.edu.au/content/dam/pdfs/governance/policy/2022-01-policies/businessexpensepolicy.pdf</a>' + '</span></p>';
+        $("#chatbox").append(botHtml);
+        document.getElementById("chat-bar-bottom").scrollIntoView(true);
+    } else {
     let botHtml = '<p class="botText"><span>' + botResponse + '</span></p>';
     $("#chatbox").append(botHtml);
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
-
+    }
 }
 
 //Gets the text text from the input box and processes it
