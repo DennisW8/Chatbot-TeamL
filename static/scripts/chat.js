@@ -67,6 +67,7 @@ function getResponse() {
     }
 
     // let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
+    // Aligning user text Left
     let userHtml = '<p class="userText"><span class="left-align">' + userText + '</span></p>';
 
     $("#textInput").val("");
