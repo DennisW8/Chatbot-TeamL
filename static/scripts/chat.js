@@ -66,7 +66,8 @@ function getResponse() {
         userText = "Yo send something of substance next time";
     }
 
-    let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
+    // let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
+    let userHtml = '<p class="userText"><span class="left-align">' + userText + '</span></p>';
 
     $("#textInput").val("");
     $("#chatbox").append(userHtml);

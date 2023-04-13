@@ -110,6 +110,11 @@
     word-wrap: break-word;
 }
 
+/* aligning user text left */
+.left-align {
+    text-align: left;
+  }
+
 .userText span {
     line-height: 1.5em;
     display: inline-block;
