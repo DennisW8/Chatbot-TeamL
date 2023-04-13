@@ -107,6 +107,7 @@
     font-weight: normal;
     text-align: right;
     clear: both;
+    word-wrap: break-word;
 }
 
 .userText span {
@@ -127,6 +128,7 @@
     font-weight: normal;
     font-size: 16px;
     text-align: left;
+    word-wrap: break-word;
 }
 
 .botText span {
