@@ -28,14 +28,14 @@ app.post('/', async (req, res) => {
         const prompt = req.body.prompt;
 
         const response = await openai.createCompletion({
-            model: "davinci:ft-personal-2023-04-18-06-12-54",
-            prompt: `Act as a question and answer AI which specialises in UNSW Policies. You will be provided with a question and you should respond based on your fine-tuning data. If the question asked isn't about UNSW policies or based on your fine-tuning data, say "Sorry, I am only able to answer questions about UNSW policies. Please ask me a question regarding to any of the policies of UNSW or its schools"
-            ${prompt}`,
+            model: "davinci:ft-personal-2023-04-18-14-49-22",
+            prompt: `Act as a bot which specialises in answering questions about UNSW Policies and your fine-tuning data. You will be provided with a question and you should respond based on your fine-tuning data. If the question asked is not about UNSW policies or based on your fine-tuning data, say "Sorry, I am only able to answer questions about UNSW policies. Please ask me a question regarding to any of the policies of UNSW or its schools"
+            ${prompt} \n\n===\n\n`,
             temperature: 0,
-            max_tokens: 400,
+            max_tokens: 300,
             top_p: 1,
             frequency_penalty: 0.5,
-            presence_penalty: 0,
+            presence_penalty: -1,
             stop: ["\n"],
             // stop: ["    "],
         });
