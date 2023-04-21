@@ -3,3 +3,4 @@ This project aimed to create a prototype chatbot for the UNSW policies website. 
 
 # Acknowledgements
 * mscBot - Github [indently] (https://github.com/indently/mscbot)
+* MscBot : Github [indently](https://github.com/indently/mscbot)
