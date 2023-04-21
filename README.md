@@ -1,7 +1,7 @@
 # Chatbot-TeamL - UNSW Chatbot 
 This project aimed to create a prototype chatbot for the UNSW policies website. The bot was built to answer student and staff questions about policies and return accurate information. The project implements a finetuned openai model in order to accurately answer user questions.
 
-# Acknowledgements
+# How to use
 These instructions provided are instrumental in running our program in this current form.
 *These requirements may vary depending on your OS and the software you are using to run this program (We used VSCode)
 1. Install Node.js
@@ -21,6 +21,7 @@ These instructions provided are instrumental in running our program in this curr
 * [UNSW POLICIES](https://www.unsw.edu.au/governance/policy) : For Fine-tune Policy Information
 * Font [Awesome](https://cdnjs.com/libraries/font-awesome) : Icons used in design
 * [Open AI](https://platform.openai.com/docs/introduction) : Used for the Chatbot API and documentation on use
+* ChatGPT Linking assistance [video](https://www.youtube.com/watch?v=2FeymQoKvrk): Video Walkthrough for linking ChatGPT AI
 
 
 
